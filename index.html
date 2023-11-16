@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title title="center">Web Scraping with Flask</title>
+</head>
+
+<style>
+    body {background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);}
+    h1   {color: blue;}
+    p    {color: red;}
+    h1 {text-align: center;}
+    label{text-align: center;}
+    input { text-align: center;}
+    button { text-align: center;animation: cubic-bezier(0.075, 0.82, 0.165, 1); color: black;background-color: aqua;}
+    form { text-align: center}
+    </style>
+<body>
+    
+    <h1>Web Scraping with Flask</h1>
+    <!-- <iframe src="https://giphy.com/embed/zgduo4kWRRDVK" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/creative-coding-programming-zgduo4kWRRDVK">via GIPHY</a></p> -->
+    <form action="/scrape" method="POST">
+        <label for="url">Enter URL:</label>
+        <input type="text" name="url" id="url" required>
+        <button type="submit">Scrape and Save</button>
+    </form>
+    <div>{{ result }}</div>
+</body>
+</html>
